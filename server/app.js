@@ -2,6 +2,7 @@ import express from 'express';
 import path from 'path';
 import formidable from 'formidable';
 import fs from 'fs';
+import mv from 'mv';
 import board from './data/board.json';
 
 const app = express();
@@ -54,7 +55,7 @@ app.post('/fileupload', (req, res) => {
         if (err) return err;
         const oldpath = files.filetoupload.path;
         const newpath = path.join(__dirname, './data/') + files.filetoupload.name;
-        fs.rename(oldpath, newpath, (err) => {
+        mv(oldpath, newpath, (err) => {
             if (err) throw err;
             res.redirect('/getboard');
         });

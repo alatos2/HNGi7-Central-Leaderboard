@@ -3,5 +3,6 @@
     { "id": 2, "fullname": "Shotayo Busayo", "username": "knoxa", "email": "s.busayo@gmail.com", "points": 10 },
     { "id": 3, "fullname": "Florence Akintayo", "username": "floreee", "email": "floreee@gmail.com", "points": 9 },
     { "id": 4, "fullname": "Evelyn King", "username": "kingston", "email": "kingston@gmail.com", "points": 8 },
-    { "id": 5, "fullname": "Ken Atolagbe", "username": "kentes", "email": "k.a@gmail.com", "points": 13 }
+    { "id": 5, "fullname": "Ken Atolagbe", "username": "kentes", "email": "k.a@gmail.com", "points": 13 },
+    { "id": 6, "fullname": "Frank Lampard", "username": "frank", "email": "fralam@hotmail.com", "points": 12 }
 ]
