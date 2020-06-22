@@ -8,7 +8,8 @@
     "ejs": "^3.1.3",
     "express": "^4.17.1",
     "formidable": "^1.2.2",
-    "mv": "^2.1.1"
+    "mv": "^2.1.1",
+    "netlify-lambda": "^1.6.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.3",
@@ -22,9 +23,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/app.js",
-    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; npm install --only=dev",
-    "heroku-postbuild": "babel server --out-dir dist --copy-files",
+    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve server",
+    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build server",
     "start-dev": "nodemon --exec babel-node ./server/app.js"
   },
   "keywords": [],
