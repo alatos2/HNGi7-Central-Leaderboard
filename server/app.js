@@ -1,11 +1,12 @@
 import express from 'express';
 import path from 'path';
 import formidable from 'formidable';
-import fs from 'fs';
+import serverless from 'serverless-http';
 import mv from 'mv';
 import board from './data/board.json';
 
 const app = express();
+const router = express.Router()
 
 // set view engine
 app.set('view engine', 'ejs');
@@ -31,12 +32,18 @@ const sortByPoints = (property) => {
 
  const sortedBoard = board.sort(sortByPoints("points"));
 
-app.get('/', (req, res) => {
-    res.send('HNGi7 Central Leaderboard App Working!!!');
+// router.get('/', (req, res) => {
+//     res.send('HNGi7 Central Leaderboard App Working!!!');
+// });
+
+router.get("/", (req, res) => {
+    res.json({
+      hello: "hi!"
+    });
 });
 
 // loads the leader board
-app.get('/getboard', (req, res) => {
+router.get('/getboard', (req, res) => {
     res.render('index', {
         title: 'HNGi7 Central Leaderboard (Sorted)',
         boards: sortedBoard
@@ -76,9 +83,8 @@ app.post('/fileupload', (req, res) => {
 //     });
 // })
 
-const port = process.env.PORT || 5000;
+app.use('/.netlify/functions/api', router);
 
-app.listen(port, () => {
-    console.log('server running on port 5000');
-});
+module.exports = app;
+module.exports.handler = serverless(app);
 

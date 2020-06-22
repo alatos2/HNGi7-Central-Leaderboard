@@ -5,11 +5,13 @@
   "main": "app.js",
   "dependencies": {
     "@babel/runtime": "^7.10.3",
+    "cross-env": "^7.0.2",
     "ejs": "^3.1.3",
     "express": "^4.17.1",
     "formidable": "^1.2.2",
     "mv": "^2.1.1",
-    "netlify-lambda": "^1.6.3"
+    "netlify-lambda": "^1.6.3",
+    "serverless-http": "^2.5.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.3",
@@ -22,10 +24,8 @@
     "nodemon": "^2.0.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve server",
-    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build server",
-    "start-dev": "nodemon --exec babel-node ./server/app.js"
+    "start": "cross-env NODE_ENV=development ./node_modules/.bin/netlify-lambda serve ./server/app.js",
+    "build": "cross-env NODE_ENV=production ./node_modules/.bin/netlify-lambda build ./server/app.js"
   },
   "keywords": [],
   "author": "",
