@@ -7,9 +7,9 @@
 * Leaderboard can allow sorting based on point
 * Leaderboard can allow people share their positions on social media
 
-## Heroku Deployment
+## Application URL
 
-Application was deployed to Heroku. Use public URL [https://propertypro-lite-ts.herokuapp.com](https://propertypro-lite-ts.herokuapp.com) with API endpoints.
+Application was deployed to Heroku. Use public URL [HNGi7 Central Leaderboard](https://hngi7leaderboard.herokuapp.com/getboard).
 
 ## Technologies Used
 
