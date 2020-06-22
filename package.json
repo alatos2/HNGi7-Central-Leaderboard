@@ -12,8 +12,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "start-dev": "nodemon start"
+    "start": "node dist/app.js",
+    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; npm install --only=dev",
+    "heroku-postbuild": "babel server --out-dir dist --copy-files",
+    "start-dev": "nodemon ./server/app.js"
   },
   "keywords": [],
   "author": "",
