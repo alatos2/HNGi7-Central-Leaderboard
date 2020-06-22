@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Leaderboard</title>
+</head>
+<body>
+    <div class="container">
+    <h2><%= title %></h2>
+    <hr>   
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+        <% boards.forEach(function(board) { %>
+            <tr>
+                <td><b><%= board.fullname %></b> </td>
+                <td><%= board.username %></td>
+                <td><%= board.email %></td>
+                <td><%= board.points %></td>
+                <td><a href="#">share points on facebook</a></td>
+            </tr>
+        <%});%>
+        </tbody>
+        </table>
+    <hr>
+    <div style="text-align: center;">&copy; 2020</div>
+    </div>
+    </body>
+</html>
+<script src="/js/main.js"></script>
