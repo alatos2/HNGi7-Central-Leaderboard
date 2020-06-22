@@ -1,0 +1,15 @@
+[
+    { "id": 1, "fullname": "Alabi Tosin", "username": "alatos", "email": "alabitosin58@gmail.com", "points": 20 },
+    { "id": 2, "fullname": "Shotayo Busayo", "username": "knoxa", "email": "s.busayo@gmail.com", "points": 10 },
+    { "id": 3, "fullname": "Florence Akintayo", "username": "floreee", "email": "floreee@gmail.com", "points": 9 },
+    { "id": 4, "fullname": "Evelyn King", "username": "kingston", "email": "kingston@gmail.com", "points": 8 },
+    { "id": 5, "fullname": "Ken Atolagbe", "username": "kentes", "email": "k.a@gmail.com", "points": 13 },
+    { "id": 6, "fullname": "Frank Lampard", "username": "frank", "email": "fralam@hotmail.com", "points": 12 },
+    { "id": 7, "fullname": "Marvel Grace", "username": "marve", "email": "g.grace@gmail.com", "points": 16 },
+    { "id": 8, "fullname": "Steven Gerrard", "username": "steve", "email": "gee@gmail.com", "points": 3 },
+    { "id": 9, "fullname": "Francis Ronaldo", "username": "ronaldo", "email": "ronaldo@gmail.com", "points": 5 },
+    { "id": 10, "fullname": "Kenny Hedger", "username": "khe", "email": "khe@yahoo.com", "points": 1.5 },
+    { "id": 11, "fullname": "Niyi Ayorinde", "username": "ayo", "email": "ayoni@live.com", "points": 3 },
+    { "id": 12, "fullname": "Funmi Adegbiyi", "username": "fun", "email": "funmi@gmail.com", "points": 14 },
+    { "id": 13, "fullname": "Remi Aluko", "username": "aluko", "email": "aluko@gmail.com", "points": 17 }
+]
