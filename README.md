@@ -9,7 +9,8 @@
 
 ## Application URL
 
-Application was deployed to Heroku. Use public URL [HNGi7 Central Leaderboard](https://hngi7leaderboard.herokuapp.com/getboard).
+Application was deployed to Heroku.
+App URL: [HNGi7 Central Leaderboard](https://hngi7leaderboard.herokuapp.com/getboard).
 
 ## Technologies Used
 

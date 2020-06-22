@@ -1,6 +1,6 @@
-const express = require('express');
-const path = require('path');
-const board = require('./data/board.json');
+import express from 'express';
+import path from 'path';
+import board from './data/board.json';
 
 const app = express();
 
@@ -39,10 +39,8 @@ app.get('/getboard', (req, res) => {
     });
 });
 
-// app.get('/all', (req, res) => {
-//     res.status(200).json({ sortedBoard });
-// })
 const port = process.env.PORT || 5000;
+
 app.listen(port, () => {
     console.log('server running on port 5000');
 });

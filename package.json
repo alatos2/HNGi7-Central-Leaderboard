@@ -23,7 +23,7 @@
     "start": "node dist/app.js",
     "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; npm install --only=dev",
     "heroku-postbuild": "babel server --out-dir dist --copy-files",
-    "start-dev": "nodemon ./server/app.js"
+    "start-dev": "nodemon --exec babel-node ./server/app.js"
   },
   "keywords": [],
   "author": "",
