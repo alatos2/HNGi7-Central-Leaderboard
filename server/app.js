@@ -29,6 +29,10 @@ const sortByPoints = (property) => {
  const sortedBoard = board.sort(sortByPoints("points"));
 
 app.get('/', (req, res) => {
+    res.send('HNGi7 Central Leaderboard App Working!!!');
+});
+
+app.get('/getboard', (req, res) => {
     res.render('index', {
         title: 'HNGi7 Central Leaderboard (Sorted)',
         boards: sortedBoard
